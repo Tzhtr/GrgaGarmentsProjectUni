@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Grga Garments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="media/clothess.png">
+    <link href='http://fonts.googleapis.com/css?family=Crafty+Girls' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/modernizr-custom-es6.js"></script>
+
+</head>
+
+<body>
+    <div id="overlay">
+        <p>Your browser does not support ES6. Please download the latest version of modern/popular browser to work with.
+        </p>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>GG</h1>
+            </a>
+        </div>
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="#about">
+                <li>About</li>
+            </a>
+            <a href="#clothes">
+                <li>Clothes</li>
+            </a>
+
+            <a href="#form-clothes">
+                <li>Order</li>
+            </a>
+            <a href="#clothes">
+                <li>Other</li>
+            </a>
+
+        </ul>
+    </header>
+    <div class="hero">
+        <div class="herotext">
+            <h2 class="herotext2">Gear up in Glamour with <br>Grga Garments</h2>
+            <h1 class="herotext1">Grga <br>Garments</h1>
+            <a href="#form-clothes" class="hero-button">Order!</a>
+            <p></p>
+        </div>
+
+    </div>
+    <div class="about" id="about">
+        <h2>ABOUT</h2>
+        <br>
+        <p>Welcome to GrgaGarments, where fashion meets individuality in every thread. GrgaGarments is more than just a
+            brand; it's
+            a commitment to providing a diverse range of garments that embody the essence of uniqueness. Our journey
+            begins with a
+            passion for crafting garments that not only elevate your style but also celebrate the authenticity of
+            self-expression.
+
+            GrgaGarments' history is rooted in a dedication to quality, innovation, and a relentless pursuit of fashion
+            that
+            resonates with the modern individual. The distinctive inclusion of "Grga" in our name reflects our
+            commitment to
+            offering Garments with Radiant Glamour and Authenticity, making each piece a canvas for personal style.
+            <br>GrgaGarments' history is rooted in a dedication to quality, innovation, and a relentless pursuit of
+            fashion that
+            resonates with the modern individual. The distinctive inclusion of "Grga" in our name reflects our
+            commitment to
+            offering Garments with Radiant Glamour and Authenticity, making each piece a canvas for personal style.
+
+        </p>
+    </div>
+    <div class="clothes" id="clothes">
+        <h2>CLOTHES</h2>
+        <div class="clothesoptions">
+            <div class="cap">
+                <h3>CAP</h3><img src="media/cap.png" alt="cap">
+                <p>Top off your look with a touch of attitude. Grga's caps are more than just accessories;
+                    they're statements of
+                    personal style. From classic to street-chic, our curated collection of caps adds the perfect
+                    finishing touch to any
+                    outfit.</p>
+            </div>
+            <div class="jacket">
+                <h3>JACKET</h3><img src="media/jacket.png" alt="jacket">
+                <p>Wrap yourself in warmth and style with Grga's exclusive jacket collection. Each piece is a
+                    fusion of
+                    contemporary design and timeless appeal, ensuring you stay on trend while facing the elements.
+                </p>
+            </div>
+            <div class="pants">
+                <h3>PANTS</h3><img src="media/pants.PNG" alt="pants">
+                <p>Elevate your stride with our signature pants at Grga's Garments. Tailored for comfort and style,
+                    these
+                    pants effortlessly
+                    transition from casual to chic, making them a wardrobe essential for every fashion-forward
+                    individual. </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <form id="form-clothes" action="form.html">
+        <fieldset>
+            <legend>Clothes View</legend>
+            <div class="container">
+                <!-- div for clothes selects -->
+                <div id="div-selects" class="container-item">
+                </div>
+                <!-- div for clothes image -->
+                <div id="div-clothes" class="imagedisplay">
+                    <img src="media/undefined-undefined.png" alt="empty image" id="typeimgs">
+                    <img src="media/undefined-undefined.png" alt="empty image" id="colorimgs">
+                    <img src="media/undefined-undefined.png" alt="empty image" id="lastimgs">
+                </div>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script src="js/app.js" type="module"></script>
+
+</html>

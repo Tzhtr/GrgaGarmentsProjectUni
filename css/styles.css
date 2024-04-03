@@ -1,0 +1,472 @@
+/* DHTML Demo CSS  */
+
+
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    font-size: 20px;
+
+}
+
+[class*="no-"] #overlay {
+    display: block;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {
+    font-family: "Crafty Girls";
+    /*font-family:"My Underwood"; */
+
+}
+
+.container {
+    display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.container-item {
+    flex: 50%;
+    padding: 20px;
+
+}
+
+.container select {
+    width: 100%;
+}
+
+input[type="text"] {
+    margin-left: 15px;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    background-color: #776c5e;
+    color: bisque;
+    font-family: Montserrat;
+}
+
+/* Header */
+header {
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(141, 134, 134, 0.26);
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+ul {
+
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: Montserrat;
+    padding-right: 100px;
+}
+
+li {
+    padding: 20px;
+}
+
+a {
+    color: #ffe4c4;
+    text-decoration: none;
+}
+
+li:hover {
+    color: rgb(187, 143, 48);
+}
+
+/* Hero */
+.hero {
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 50px;
+    align-items: center;
+    background-image: url(../media/heropic.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Poppins;
+}
+
+.hero-button {
+    font-size: 20px;
+    font-weight: 400;
+    width: fit-content;
+    padding: 10px 20px;
+    border: 2px solid #ffe4c4;
+    background-color: transparent;
+    color: #ffe4c4;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #ffe4c4;
+    color: #000;
+}
+
+.herotext1 {
+    font-size: 100px;
+}
+
+.herotext2 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+/* About */
+.about {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #776c5e;
+    color: #ffe4c4d0;
+    text-align: justify;
+    font-family: Montserrat;
+}
+
+.about>p {
+    width: 50%;
+    font-family: Poppins;
+}
+
+/* Clothes Showcase */
+.clothes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    height: auto;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #000000), url(../media/Shop.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: Poppins;
+
+}
+
+.clothesoptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.cap,
+.jacket,
+.pants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+img {
+    max-height: 300px;
+}
+
+.clothesoptions>div>p {
+    font-family: Montserrat;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #776c5e;
+    color: #ffe4c4d0;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;
+}
+
+form>p {
+    max-width: 90%;
+}
+
+.wardrobe {
+    font-family: Montserrat;
+}
+
+label {
+    margin-bottom: 8px;
+    display: block;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#clothing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#clothing-container>div>img {
+    width: 100%;
+}
+
+.clothing {
+    width: 150px;
+    height: 150px;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.formButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    gap: 20px
+}
+
+button {
+    background-color: #ffe4c4;
+    color: #0a0a0a;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffe4c4d0;
+}
+
+.previews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.optiones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.optionesleft {
+    margin-right: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #ffe4c4d0;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+#div-clothes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+#div-clothes img {
+    max-width: 100%;
+}
+
+
+
+/*OrderPage*/
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+    font-family: Poppins;
+    font-size: 15px;
+    padding: 20px;
+    padding-top: 150px;
+}
+
+.order-summary {
+    flex: 1;
+    padding: 20px;
+}
+
+.personal-info {
+    flex: 1;
+    padding: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+
+.error-message {
+    color: red;
+}
+
+.imagedisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#typeimgs,
+#colorimgs,
+#lastimgs {
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#contforms {
+    padding-top: 100px;
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .about>p {
+        width: 90%;
+    }
+
+    .clothesoptions {
+        flex-direction: column;
+    }
+
+    .optiones {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #contforms {
+        padding-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .herotext1 {
+        font-size: 13vw;
+    }
+
+    .herotext2 {
+        padding-right: 20px;
+        font-size: 5vw;
+    }
+
+    ul {
+        font-size: 2vw;
+        padding-right: 70px;
+    }
+}
